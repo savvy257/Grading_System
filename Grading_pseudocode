@@ -1,0 +1,21 @@
+START
+  PROMPT user to enter a score (0 - 100)
+  READ score
+
+  IF score >= 70 and score <= 100
+      grade = "A"
+  ELSE IF score >= 60 and score <= 69
+      grade = "B"
+  ELSE IF score >= 50 and score <= 59
+      grade = "C"
+  ELSE IF score >= 45 and score <= 49
+      grade = "D"
+  ELSE IF score >= 40 and score <= 44
+      grade = "E"
+  ELSE IF score >= 0 and score < 40
+      grade = "F"
+  ELSE
+      grade = "Invalid score"
+
+  PRINT "Your grade is: " + grade
+END
